@@ -32,7 +32,7 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message":"hello world"}
+    return {"message":"bind mount works ok."}
 print(settings.database_password)
 
 class Post(BaseModel):
